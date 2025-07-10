@@ -1,0 +1,41 @@
+/* Requisito 1: Customização dos links */
+
+/* Link padrão: cor de destaque e negrito */
+a {
+  color: #0077cc; /* cor de destaque */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Ao passar o mouse (hover): cor mais escura */
+a:hover {
+  color: #005fa3;
+}
+
+/* Link visitado: não fica mais em negrito */
+a:visited {
+  color: #4b0082; /* tonalidade diferenciada para links visitados */
+  font-weight: normal;
+}
+
+/* Requisito 2: Estilização da primeira letra do primeiro parágrafo da seção principal */
+
+main p:first-of-type::first-letter {
+  font-size: 300%; /* 3 vezes maior */
+  font-family: 'Georgia', serif; /* fonte diferente */
+  float: left;
+  padding-right: 5px;
+  line-height: 1;
+}
+
+/* Requisito 3: Bordas no menu de design */
+
+.menu-design li {
+  border-top: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Último item com borda inferior */
+.menu-design li:last-child {
+  border-bottom: 1px solid #ccc;
+}
