@@ -2,40 +2,42 @@
 
 /* Link padrão: cor de destaque e negrito */
 a {
-  color: #0077cc; /* cor de destaque */
+  color: #cc008fb6; /* cor de destaque */
   font-weight: bold;
   text-decoration: none;
 }
 
 /* Ao passar o mouse (hover): cor mais escura */
 a:hover {
-  color: #005fa3;
+  color: #d8afc875;
 }
 
 /* Link visitado: não fica mais em negrito */
 a:visited {
-  color: #4b0082; /* tonalidade diferenciada para links visitados */
+  color: #001182; /* tonalidade diferenciada para links visitados */
   font-weight: normal;
 }
 
-/* Requisito 2: Estilização da primeira letra do primeiro parágrafo da seção principal */
-
-main p:first-of-type::first-letter {
-  font-size: 300%; /* 3 vezes maior */
-  font-family: 'Georgia', serif; /* fonte diferente */
-  float: left;
-  padding-right: 5px;
+/* === PRIMEIRA LETRA DO PRIMEIRO PARÁGRAFO DA SEÇÃO PRINCIPAL === */
+#zen-supporting > div:first-child p:first-of-type::first-letter {
+  font-size: 300%; /* 3x maior */
+  font-family: 'Georgia', serif; /* fonte diferente da do site */
+  float: left; /* flutua à esquerda */
   line-height: 1;
+  padding-right: 5px;
+  margin-top: 5px;
 }
 
-/* Requisito 3: Bordas no menu de design */
 
-.menu-design li {
+/* === BORDAS ENTRE ITENS DO MENU DE DESIGN === */
+
+/* Aplica borda superior a todos os itens */
+#design-selection li {
   border-top: 1px solid #ccc;
-  padding: 10px;
+  padding: 10px 0;
 }
 
-/* Último item com borda inferior */
-.menu-design li:last-child {
+/* Aplica borda inferior apenas ao último item */
+#design-selection li:last-child {
   border-bottom: 1px solid #ccc;
 }
